@@ -1,0 +1,31 @@
+.card-type-container{
+    position: absolute;
+    left:10px;
+    top:25px;
+    right:10px;
+    bottom: 25px;
+}
+.card-copa-top{
+    position: absolute;
+    height:33%;
+}
+.card-copa-bottom{
+    position: absolute;
+    height:33%;
+    bottom: 0;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+.card-copa-middle{
+    position: absolute;
+    height:33%;
+    top: 34%;
+}
+.top{
+    top:20%;
+    left:31%
+}
