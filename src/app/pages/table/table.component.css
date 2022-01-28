@@ -12,3 +12,37 @@
 .table-container-internal{
     position: relative;
 }
+.bottom-space{
+    padding:16px;
+    width:600px;
+    height:270px;
+    border-radius: 10px;
+    position: relative;
+    margin:auto;
+    margin-top:100px;
+}
+
+.middle-space{
+    padding:16px;
+    width:800px;
+    height:550px;
+    border-radius: 10px;
+    border:solid 3px #EEE;
+    position: relative;
+    margin:auto;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.hand:hover{
+    cursor: pointer;
+}
+
+.move-boot{
+    left:700px!important;
+    top: 1000px!important;
+    transform: rotate(-90deg)!important;
+    transition: all 1s ease-in-out;
+}

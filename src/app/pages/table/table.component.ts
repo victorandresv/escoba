@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TableComponent implements OnInit {
 
   public cards:any = [];
+  public move_bottom:string = "";
 
   constructor() { 
     const types = ['oro', 'copa', 'basto', 'espada'];
@@ -22,6 +23,10 @@ export class TableComponent implements OnInit {
         });
       }
     }
+  }
+
+  click_card1(){
+    this.move_bottom = "move-boot";
   }
 
   ngOnInit(): void {

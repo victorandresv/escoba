@@ -1,7 +1,39 @@
 <div class="table-container">
     <div class="table-container-internal">
+        <!--
         <div *ngFor="let card of cards">
             <app-frontcard number="{{card.number}}" type="{{card.type}}"></app-frontcard>
+        </div>
+        -->
+
+        <div class="middle-space">
+            <div class="absolute" style="left:10px;">
+                <app-frontcard number="1" type="copa"></app-frontcard>
+            </div>
+            <div class="absolute" style="left:200px">
+                <app-frontcard number="12" type="oro"></app-frontcard>
+            </div>
+            <div class="absolute" style="left:10px;top:300px">
+                <app-frontcard number="6" type="espada"></app-frontcard>
+            </div>
+            <div class="absolute" style="left:200px;top:300px">
+                <app-frontcard number="3" type="basto"></app-frontcard>
+            </div>
+            <div class="absolute {{move_bottom}}" style="left:500px;top:150px;transform: rotate(-10deg);">
+                <app-frontcard number="7" type="oro"></app-frontcard>
+            </div>
+        </div>
+
+        <div class="bottom-space">
+            <div (click)="click_card1()" class="absolute hand" style="left:10px;transform: rotate(-10deg);top:40px">
+                <app-frontcard number="5" type="copa"></app-frontcard>
+            </div>
+            <div class="absolute hand" style="left:150px">
+                <app-frontcard number="3" type="oro"></app-frontcard>
+            </div>
+            <div class="absolute hand" style="left:300px;transform: rotate(10deg);">
+                <app-frontcard number="10" type="espada"></app-frontcard>
+            </div>
         </div>
     </div>
 </div>
