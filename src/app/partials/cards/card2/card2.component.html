@@ -1,4 +1,9 @@
 <div class="card-type-container">
-    <img class="card-top" src="assets/images/{{type}}.png"/>
-    <img class="card-bottom" src="assets/images/{{type}}.png"/> 
+    <div *ngIf="type=='copa'||type=='oro'">
+        <img class="card-top" src="assets/images/{{type}}.png"/>
+        <img class="card-bottom" src="assets/images/{{type}}.png"/> 
+    </div>
+    <div *ngIf="type=='basto'">
+        <img class="card-middle" src="assets/images/{{type}}2.png"/>
+    </div>
 </div>

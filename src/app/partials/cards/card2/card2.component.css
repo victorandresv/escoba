@@ -16,3 +16,7 @@
     left: 20%;
     bottom: 0;
 }
+.card-middle{
+    position: absolute;
+    height:100%;
+}
