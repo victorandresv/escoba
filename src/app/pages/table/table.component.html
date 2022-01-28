@@ -7,34 +7,42 @@
         -->
 
         <div class="middle-space">
-            <div class="absolute" style="left:10px;">
-                <app-frontcard number="1" type="copa"></app-frontcard>
+            <!--CUATRO CARTAS EN LA MESA-->
+            <div class="absolute table-0-0" *ngIf="table_left_up_card">
+                <app-frontcard number="{{table_left_up_card.number}}" type="{{table_left_up_card.type}}"></app-frontcard>
             </div>
-            <div class="absolute" style="left:200px">
-                <app-frontcard number="12" type="oro"></app-frontcard>
+            <div class="absolute table-0-1" *ngIf="table_right_up_card">
+                <app-frontcard number="{{table_right_up_card.number}}" type="{{table_right_up_card.type}}"></app-frontcard>
             </div>
-            <div class="absolute" style="left:10px;top:300px">
-                <app-frontcard number="6" type="espada"></app-frontcard>
+            <div class="absolute table-1-0" *ngIf="table_left_down_card">
+                <app-frontcard number="{{table_left_down_card.number}}" type="{{table_left_down_card.type}}"></app-frontcard>
             </div>
-            <div class="absolute" style="left:200px;top:300px">
-                <app-frontcard number="3" type="basto"></app-frontcard>
+            <div class="absolute table-1-1" *ngIf="table_right_down_card">
+                <app-frontcard number="{{table_right_down_card.number}}" type="{{table_right_down_card.type}}"></app-frontcard>
             </div>
-            <div class="absolute" style="left:740px;top:20px;transform: rotate(90deg);">
+            <!--CUATRO CARTAS EN LA MESA-->
+
+            <!--CARTAS RESTANTES-->
+            <div class="absolute carta-restante" *ngIf="cardsremain.length > 0" style="transform: rotate(90deg);">
                 <app-backcard *ngFor="let card of cardsremain"></app-backcard>
             </div>
-            <div class="absolute {{move_bottom}}" style="left:500px;top:250px;transform: rotate(-10deg);">
+            <!--CARTAS RESTANTES-->
+
+            <!--CARTA TIRADA-->
+            <div class="absolute carta-tirada" *ngIf="current_card" style="transform: rotate(-10deg);">
                 <app-frontcard number="7" type="oro"></app-frontcard>
             </div>
+            <!--CARTA TIRADA-->
         </div>
 
         <div class="bottom-space">
-            <div (click)="click_card1()" class="absolute hand" style="left:10px;transform: rotate(-10deg);top:40px">
+            <div class="absolute hand card-me-1" *ngFor="table_card_me_1">
                 <app-frontcard number="5" type="copa"></app-frontcard>
             </div>
-            <div class="absolute hand" style="left:150px">
+            <div class="absolute hand card-me-2" *ngFor="table_card_me_2">
                 <app-frontcard number="3" type="oro"></app-frontcard>
             </div>
-            <div class="absolute hand" style="left:300px;transform: rotate(10deg);">
+            <div class="absolute hand card-me-3" *ngFor="table_card_me_3">
                 <app-frontcard number="10" type="espada"></app-frontcard>
             </div>
         </div>

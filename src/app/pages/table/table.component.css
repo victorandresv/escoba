@@ -40,9 +40,37 @@
     cursor: pointer;
 }
 
-.move-boot{
-    left:700px!important;
-    top: 1000px!important;
-    transform: rotate(-90deg)!important;
-    transition: all 1s ease-in-out;
+.table-0-0{
+    left:10px;
+}
+.table-0-1{
+    left:200px;
+}
+.table-1-0{
+    left:10px;
+    top:300px;
+}
+.table-1-1{
+    left:200px;
+    top:300px;
+}
+.carta-restante{
+    left:740px;
+    top:20px;
+}
+.carta-tirada{
+    left:500px;
+    top:250px;
+}
+.card-me-1{
+    left:10px;
+    transform: rotate(-10deg);
+    top:40px;
+}
+.card-me-2{
+    left:150px;
+}
+.card-me-3{
+    left:300px;
+    transform: rotate(10deg);
 }
