@@ -1,18 +1,18 @@
 <div class="card-container">
     <div class="card-internal-border">
         <div class="card-number-top">{{number}}</div>
-        <div *ngIf="type=='copa'">
-            <app-copa1 *ngIf="number=='1'"></app-copa1>
-            <app-copa2 *ngIf="number=='2'"></app-copa2>
-            <app-copa3 *ngIf="number=='3'"></app-copa3>
-            <app-copa4 *ngIf="number=='4'"></app-copa4>
-            <app-copa5 *ngIf="number=='5'"></app-copa5>
-            <app-copa6 *ngIf="number=='6'"></app-copa6>
-            <app-copa7 *ngIf="number=='7'"></app-copa7>
-            <app-copa10 *ngIf="number=='10'"></app-copa10>
-            <app-copa11 *ngIf="number=='11'"></app-copa11>
-            <app-copa12 *ngIf="number=='12'"></app-copa12>
-        </div>
+
+        <app-card1 *ngIf="number=='1'" type="{{type}}"></app-card1>
+        <app-card2 *ngIf="number=='2'" type="{{type}}"></app-card2>
+        <app-card3 *ngIf="number=='3'" type="{{type}}"></app-card3>
+        <app-card4 *ngIf="number=='4'" type="{{type}}"></app-card4>
+        <app-card5 *ngIf="number=='5'" type="{{type}}"></app-card5>
+        <app-card6 *ngIf="number=='6'" type="{{type}}"></app-card6>
+        <app-card7 *ngIf="number=='7'" type="{{type}}"></app-card7>
+        <app-card10 *ngIf="number=='10'" type="{{type}}"></app-card10>
+        <app-card11 *ngIf="number=='11'" type="{{type}}"></app-card11>
+        <app-card12 *ngIf="number=='12'" type="{{type}}"></app-card12>
+
         <div class="card-number-bottom">{{number}}</div>
     </div>
 </div>

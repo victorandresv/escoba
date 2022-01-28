@@ -1,0 +1,22 @@
+.card-type-container{
+    position: absolute;
+    left:10px;
+    top:25px;
+    right:10px;
+    bottom: 25px;
+}
+.card-top{
+    position: absolute;
+    height:45%;
+}
+.card-middle{
+    position: absolute;
+    height:45%;
+    left: 50%;
+    top: 30%;
+}
+.card-bottom{
+    position: absolute;
+    height:45%;
+    bottom: 0;
+}
