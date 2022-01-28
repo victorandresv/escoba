@@ -26,3 +26,28 @@
     left: 30%;
     top: 32%;
 }
+.rotate-top-left{
+    height:42%;
+    left:10px;
+    transform: rotate(-156deg);
+}
+.rotate-top-right{
+    height:42%;
+    right:10px;
+    transform: rotate(156deg);
+}
+.rotate-bottom-left{
+    height:42%;
+    left:10px;
+    transform: rotate(-26deg);
+}
+.rotate-bottom-right{
+    height:42%;
+    right:10px;
+    transform: rotate(26deg);
+}
+.middle{
+    margin-top:14px;
+    height:20%;
+    left:10%;
+}

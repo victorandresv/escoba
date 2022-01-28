@@ -20,3 +20,7 @@
     height:45%;
     bottom: 0;
 }
+.card-middle2{
+    position: absolute;
+    height:100%;
+}

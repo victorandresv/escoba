@@ -20,3 +20,23 @@
 .right{
     right: 0;
 }
+.rotate-top-left{
+    height:45%;
+    left:10px;
+    transform: rotate(-26deg);
+}
+.rotate-top-right{
+    height:45%;
+    right:10px;
+    transform: rotate(26deg);
+}
+.rotate-bottom-left{
+    height:45%;
+    left:10px;
+    transform: rotate(-156deg);
+}
+.rotate-bottom-right{
+    height:45%;
+    right:10px;
+    transform: rotate(156deg);
+}

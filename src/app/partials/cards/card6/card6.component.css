@@ -25,3 +25,29 @@
     height:33%;
     top: 34%;
 }
+.top-left{
+    height:45%;
+}
+.top-middle{
+    height:45%;
+    left:35%;
+    transform: rotate(180deg);
+}
+.top-right{
+    height:45%;
+    left:60%;
+}
+.bottom-left{
+    height:45%;
+    transform: rotate(180deg);
+    left: 3%;
+}
+.bottom-middle{
+    height:45%;
+    left:28%;
+}
+.bottom-right{
+    height:45%;
+    left:63%;
+    transform: rotate(180deg);
+}

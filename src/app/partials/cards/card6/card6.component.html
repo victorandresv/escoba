@@ -1,8 +1,18 @@
 <div class="card-type-container">
-    <img class="card-top left" src="assets/images/{{type}}.png"/>
-    <img class="card-top right" src="assets/images/{{type}}.png"/>
-    <img class="card-middle left" src="assets/images/{{type}}.png"/>
-    <img class="card-middle right" src="assets/images/{{type}}.png"/>
-    <img class="card-bottom left" src="assets/images/{{type}}.png"/> 
-    <img class="card-bottom right" src="assets/images/{{type}}.png"/> 
+    <div *ngIf="type=='copa'||type=='oro'">
+        <img class="card-top left" src="assets/images/{{type}}.png"/>
+        <img class="card-top right" src="assets/images/{{type}}.png"/>
+        <img class="card-middle left" src="assets/images/{{type}}.png"/>
+        <img class="card-middle right" src="assets/images/{{type}}.png"/>
+        <img class="card-bottom left" src="assets/images/{{type}}.png"/> 
+        <img class="card-bottom right" src="assets/images/{{type}}.png"/> 
+    </div>
+    <div *ngIf="type=='basto'">
+        <img class="card-top top-left" src="assets/images/{{type}}_verde.png"/>
+        <img class="card-top top-middle" src="assets/images/{{type}}_rojo.png"/>
+        <img class="card-top top-right" src="assets/images/{{type}}_verde.png"/>
+        <img class="card-bottom bottom-left" src="assets/images/{{type}}_rojo.png"/>
+        <img class="card-bottom bottom-middle" src="assets/images/{{type}}_verde.png"/> 
+        <img class="card-bottom bottom-right" src="assets/images/{{type}}_rojo.png"/> 
+    </div>
 </div>
