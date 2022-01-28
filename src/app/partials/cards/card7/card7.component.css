@@ -61,3 +61,39 @@
     left: 10%;
     top:40%;
 }
+
+
+.top-left2{
+    height:45%;
+    left:10%;
+}
+.top-middle2{
+    height:45%;
+    left:37%;
+}
+.top-right2{
+    height:45%;
+    left:64%;
+}
+.bottom-left2{
+    height:45%;
+    transform: rotate(180deg);
+    left: 11%;
+}
+.bottom-middle2{
+    height:45%;
+    left:38%;
+    transform: rotate(180deg);
+}
+.bottom-right2{
+    height:45%;
+    left:65%;
+    transform: rotate(180deg);
+}
+
+.middle2{
+    height: 40%;
+    left: 40%;
+    top:30%;
+    transform: rotate(90deg);
+}

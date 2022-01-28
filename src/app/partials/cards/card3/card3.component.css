@@ -24,3 +24,19 @@
     position: absolute;
     height:100%;
 }
+.card-left{
+    position: absolute;
+    height:100%;
+}
+.card-middle-center{
+    top:0;
+    left:26%;
+    position: absolute;
+    height:100%;
+    transform: rotate(180deg);
+}
+.card-right{
+    right:0;
+    position: absolute;
+    height:100%;
+}
