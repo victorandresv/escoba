@@ -19,7 +19,10 @@
             <div class="absolute" style="left:200px;top:300px">
                 <app-frontcard number="3" type="basto"></app-frontcard>
             </div>
-            <div class="absolute {{move_bottom}}" style="left:500px;top:150px;transform: rotate(-10deg);">
+            <div class="absolute" style="left:740px;top:20px;transform: rotate(90deg);">
+                <app-backcard *ngFor="let card of cardsremain"></app-backcard>
+            </div>
+            <div class="absolute {{move_bottom}}" style="left:500px;top:250px;transform: rotate(-10deg);">
                 <app-frontcard number="7" type="oro"></app-frontcard>
             </div>
         </div>

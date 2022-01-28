@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TableComponent implements OnInit {
 
   public cards:any = [];
+  public cardsremain:any = [];
+
   public move_bottom:string = "";
 
   constructor() { 

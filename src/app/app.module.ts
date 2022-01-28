@@ -16,6 +16,7 @@ import { Card7Component } from './partials/cards/card7/card7.component';
 import { Card10Component } from './partials/cards/card10/card10.component';
 import { Card11Component } from './partials/cards/card11/card11.component';
 import { Card12Component } from './partials/cards/card12/card12.component';
+import { BackcardComponent } from './partials/backcard/backcard.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Card12Component } from './partials/cards/card12/card12.component';
     Card7Component,
     Card10Component,
     Card11Component,
-    Card12Component
+    Card12Component,
+    BackcardComponent
   ],
   imports: [
     BrowserModule,
